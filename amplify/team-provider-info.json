@@ -1,0 +1,20 @@
+{
+    "mobile": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-vyomalambda-mobile-90816-authRole",
+            "UnauthRoleArn": "arn:aws:iam::766231626441:role/amplify-vyomalambda-mobile-90816-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::766231626441:role/amplify-vyomalambda-mobile-90816-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-vyomalambda-mobile-90816-deployment",
+            "UnauthRoleName": "amplify-vyomalambda-mobile-90816-unauthRole",
+            "StackName": "amplify-vyomalambda-mobile-90816",
+            "StackId": "arn:aws:cloudformation:us-east-1:766231626441:stack/amplify-vyomalambda-mobile-90816/e50b3a40-7ba5-11ea-9834-120022ae60fd",
+            "AmplifyAppId": "d2m3zsy4112813"
+        },
+        "categories": {
+            "auth": {
+                "vyomalambda55c8f01f": {}
+            }
+        }
+    }
+}

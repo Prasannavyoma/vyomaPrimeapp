@@ -1,0 +1,53 @@
+{
+    "identityPoolName": "vyomalambda55c8f01f_identitypool_55c8f01f",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "vyomal55c8f01f",
+    "userPoolName": "vyomalambda55c8f01f_userpool_55c8f01f",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "userpoolClientLambdaRole": "vyomal55c8f01f_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "resourceName": "vyomalambda55c8f01f",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "default",
+    "usernameAttributes": [
+        "phone_number"
+    ],
+    "userPoolGroupList": [],
+    "dependsOn": []
+}

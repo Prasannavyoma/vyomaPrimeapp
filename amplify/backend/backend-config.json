@@ -1,0 +1,10 @@
+{
+	"auth": {
+		"vyomalambda55c8f01f": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false
+		}
+	}
+}
