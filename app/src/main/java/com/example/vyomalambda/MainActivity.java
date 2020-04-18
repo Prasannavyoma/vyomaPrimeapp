@@ -1,7 +1,5 @@
 package com.example.vyomalambda;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,8 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.amazonaws.mobile.client.AWSMobileClient;
 import com.amazonaws.mobile.client.Callback;
@@ -19,7 +18,6 @@ import com.amazonaws.mobile.client.UserStateDetails;
 import com.amazonaws.mobile.client.results.SignInResult;
 import com.amazonaws.mobile.client.results.SignUpResult;
 import com.amazonaws.mobile.client.results.UserCodeDeliveryDetails;
-
 
 import java.util.HashMap;
 import java.util.Map;
@@ -33,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
 
                 setContentView(R.layout.activity_main);
-                ImageButton btnSignout = (ImageButton) findViewById(R.id.btnSignout);
+                ImageButton btnSignout = findViewById(R.id.btnSignout);
                 btnSignout.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v) {
                         Signout();
@@ -66,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResult(final Void result) {
                 Log.d("status", "signed-out");
-                makeToast("Signed Out");
+                makeToast("Signed Out Successfully");
                 GoSignIn();
 
             }
@@ -144,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Log.e( "Sign-up callback state: " + signUpResult.getConfirmationState()," State");
+                        Log.e("Sign-up callback state: ", " State");
                         if (!signUpResult.getConfirmationState()) {
                             final UserCodeDeliveryDetails details = signUpResult.getUserCodeDeliveryDetails();
                             makeToast("Confirm sign-up with: " + details.getDestination());
