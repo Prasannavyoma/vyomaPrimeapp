@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Vyoma Lambda</string>
+    <string name="app_logout">Logout</string>
+    <string name="app_home">Home</string>
+    <string name="lbl_password">Password:</string>
+    <string name="lbl_phone">Phone #:</string>
+    <string name="lbl_sign_up">Sign Up</string>
+    <string name="lbl_sign_in">Sign In</string>
 </resources>
