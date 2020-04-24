@@ -44,4 +44,9 @@ dependencies {
 
 //For hosted UI also:
     implementation 'com.amazonaws:aws-android-sdk-cognitoauth:2.16.+'
+    // For Picasso Image Handling
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    implementation 'com.jaeger.statusbarutil:library:1.4.0'
 }
