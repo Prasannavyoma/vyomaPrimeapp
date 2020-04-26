@@ -1,4 +1,4 @@
-package com.example.vyomalambda;
+package com.om.vyomalambda;
 
 import com.amazonaws.mobileconnectors.lambdainvoker.LambdaFunction;
 public interface MyInterface {
@@ -8,6 +8,6 @@ public interface MyInterface {
      * The function name is the method name.
      */
     @LambdaFunction
-     ResponseClass AndroidBackendLambdaFunction(RequestClass request);
+    com.om.vyomalambda.ResponseClass AndroidBackendLambdaFunction(com.om.vyomalambda.RequestClass request);
 
 }

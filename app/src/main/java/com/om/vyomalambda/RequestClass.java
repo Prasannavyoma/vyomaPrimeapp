@@ -1,4 +1,4 @@
-package com.example.vyomalambda;
+package com.om.vyomalambda;
 
 public class RequestClass {
     String firstName;

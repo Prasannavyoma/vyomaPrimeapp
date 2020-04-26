@@ -3,10 +3,12 @@
     <item
         android:id="@+id/menu_home"
         android:icon="?attr/homeAsUpIndicator"
+        android:showAsAction="ifRoom"
         android:title="@string/app_home" />
     <item
         android:id="@+id/menu_logout"
         android:icon="@android:drawable/ic_lock_power_off"
+        android:showAsAction="ifRoom"
         android:title="@string/app_logout" />
 
 </menu>
