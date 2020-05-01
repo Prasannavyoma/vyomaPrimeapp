@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
         //TextView tv = findViewById(R.id.txtVideoTop);
         //tv.setText(currentContentJSON.getString("description"));
         makeToast(currentContentJSON.getString("description"));
-        setTitle(" Om Prime: " + currentContentJSON.getString("description"));
+        setTitle(" Vyoma Prime: " + currentContentJSON.getString("description"));
 
 
         videoView.setMediaController(mediacontroller);
@@ -144,6 +144,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void GoHome() {
         deleteCache(MainActivity.this);
+        setTitle(" Vyoma Prime");
         AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
             @Override
             public void onResult(UserStateDetails userStateDetails) {
@@ -353,7 +354,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.mipmap.aum3);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
-        setTitle(" Om Prime");
+        setTitle(" Vyoma Prime");
 
         //getSupportActionBar().setHomeButtonEnabled(true);
         GoHome();
